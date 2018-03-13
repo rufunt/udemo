@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180310172248) do
+ActiveRecord::Schema.define(version: 20180313191528) do
 
   create_table "courses", force: :cascade do |t|
     t.string   "image"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20180310172248) do
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.boolean  "public"
   end
 
 end
