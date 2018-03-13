@@ -7,11 +7,11 @@
       <div class="card-content white-text">
         <div class="row">
           <div class="col m2 center">
-            <%= image_tag "courses/#{@course.image}" %>
+            <%= image_tag "courses/#{@course.cover}" %>
           </div>
           <div class="col m8">
             <span class="card-title"><%= @course.title %></span>
-            <% (1..@course.star).each do %>
+            <% (1..@course.star_number).each do %>
               <i class="material-icons">grade</i>
             <% end %>
             <p><%= @course.description %></p>
