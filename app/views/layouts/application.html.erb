@@ -21,12 +21,12 @@
       <a href="#!" class="brand-logo">Udemo</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Courses</a></li>
+        <li><%= link_to "Courses", courses_path %></li>
         <li><%= link_to "About", pages_about_path %></li>
         <li><%= link_to "Location", pages_location_path %></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="#">Courses</a></li>
+        <li><%= link_to "Courses", courses_path %></li>
         <li><%= link_to "About", pages_about_path %></li>
         <li><%= link_to "Location", pages_location_path %></li>
       </ul>
