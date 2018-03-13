@@ -6,6 +6,6 @@ class PagesController < ApplicationController
   end
   
   def home
-    
+    @courses = Course.all
   end
 end

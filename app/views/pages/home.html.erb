@@ -1,8 +1,21 @@
-<div>
-  <iframe width="100%" height="360" src="https://www.youtube.com/embed/MnEyZUlG6lI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+<br/>
 
-<div>
-  <iframe width="100%" height="360" src="https://youtu.be/G2eFjCnFgUE?list=PLU12uITxBEPF2bj9LH2v1EYW2KmBWW4AN" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="row">
+  <% @courses.each do |course| %>
+    <div class="col m4">
+      <div class="card">
+        <div class="card-image">
+          <%= link_to course do %>
+            <%= image_tag "courses/#{course.image}" %>
+          <% end %>
+        </div>
+        <div class="class-content">
+          <span class="card-title"><%= course.title %></span>
+            <% (1..course.star).each do %>
+              <i class="material-icons green-text">grade</i>
+            <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
 </div>
-
